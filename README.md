@@ -25,7 +25,7 @@ Design and simulation of a **GaN-based full-bridge LLC resonant step-up converte
 | Output Power | 400 W |
 | Switching Frequency | 100 kHz – 1 MHz |
 | Topology | Full-Bridge LLC Resonant Converter |
-| Switching Devices | GaN MOSFETs (EPC series) |
+| Switching Devices | GaN MOSFETs (EPC series, GaN Systems) |
 
 ---
 
@@ -101,7 +101,7 @@ Simulations were run across the full load range at all three switching frequenci
 
 ## 🖥️ LTspice Simulations
 
-All simulations use real **EPC GaN MOSFET SPICE models** (`EPC_GaN_Library.lib`) for accurate loss estimation, including parasitic capacitances and non-ideal switching behavior. Multiple GaN device variants were evaluated during the design phase to select the optimal transistor for each stage (see `device_comparison/`).
+All simulations use real **GaN MOSFET SPICE models** from two device families — **EPC** and **GaN Systems (Infineon Technologies Company)** — for accurate loss estimation, including parasitic capacitances and non-ideal switching behavior. Multiple device variants from both families were evaluated during the design phase to select the optimal transistor for each stage (see `device_comparison/`).
 
 The secondary-side bridge uses GaN MOSFETs as a **synchronous rectifier** instead of diodes, eliminating forward-voltage drop losses and improving overall efficiency through their low R_DS(on).
 
