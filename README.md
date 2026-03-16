@@ -146,43 +146,32 @@ llc-gan-microinverter/
 ├── README.md
 ├── LLC_Converter_Report.pdf          # Full internship report (EN)
 │
-├── ltspice/
-│   ├── llc_converter/                    # LLC stage standalone (3 frequencies)
-│   │   ├── Circuit_400W_100KHz.asc
-│   │   ├── Circuit_400W_500KHz.asc
-│   │   ├── Circuit_400W_1MHz.asc
-│   │   ├── dead_time_analysis/           # Dead time optimization study
-│   │   │   ├── Dead_time.asc
-│   │   │   ├── Dead_time_V1.asc
-│   │   │   └── Dead_time_V2.asc
-│   │   └── EPC_GaN_Library.lib
+├── Simulations/                      # Spice simulation files
 │   │
-│   ├── full_microinverter/               # Complete LLC + H-bridge + LC filter
-│   │   ├── Full_100KHz.asc
-│   │   ├── Full_500KHz.asc
-│   │   └── Full_1MHz.asc
-│   │
-│   ├── efficiency_sweep/                 # Full system sweep 100W–400W
-│   │   ├── Full_100W_100KHz.asc
-│   │   ├── Full_100W_500KHz.asc
-│   │   ├── Full_150W_100KHz.asc
-│   │   └── ...
-│   │
-│   └── device_comparison/               # GaN device selection study
-│       ├── Components/                  # SPICE models for evaluated devices
-│       └── ...
+│   ├── Device_Comparison/            # GaN device selection study
+│   └── ...
+│   ├── Efficiency_Sweep/             # Full system sweep
+│   └── ...
+│   ├── Full_Microinverter/           # Complete LLC + H-bridge + LC filter
+│   └── ...
+│   ├── Inverter/                     # Inverter stage
+│   └── ...
+│   ├── LLC_Converter/                # LLC stage
+│   └── ...
 │
-├── matlab/
-│   └── llc_gain_plot.m
+├── Matlab/
+│   └── LLC Gain Plot.m
 │
-├── c/
-│   └── llc_sizing.c
 │
-└── images/
-    ├── llc_circuit.png
-    ├── full_circuit.png
-    ├── sinewave_output.png
-    └── eff_vs_power.png
+├── Sizing/
+│   └── LLC Sizing.c
+│   └── LLC Sizing.m
+│
+└── Images/
+    ├── Eff_vs_Power.png
+    ├── Full_circuit.png
+    ├── LLC_circuit.png
+    └── Sinewave_output.png
 ```
 
 ---
