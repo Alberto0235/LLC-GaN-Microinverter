@@ -159,7 +159,6 @@ llc-gan-microinverter/
 ├── Matlab/
 │   └── LLC Gain Plot.m
 │
-│
 ├── Sizing/
 │   ├── LLC Sizing.c
 │   └── LLC Sizing.m
