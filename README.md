@@ -95,7 +95,7 @@ The efficiency–frequency trade-off is clear: higher switching frequency reduce
 
 Simulations were run across the full load range at all three switching frequencies to characterize the efficiency profile. Peak efficiency shifts to higher power levels as switching frequency increases, reflecting the interplay between conduction losses (dominant at heavy load) and switching losses (dominant at light load).
 
-![Efficiency vs Power](images/eff_vs_power.png)
+![Efficiency vs Power](Images/Eff_vs_Power.png)
 
 ---
 
@@ -106,13 +106,13 @@ All simulations use real **GaN MOSFET SPICE models** from two device families �
 The secondary-side bridge uses GaN MOSFETs as a **synchronous rectifier** instead of diodes, eliminating forward-voltage drop losses and improving overall efficiency through their low R_DS(on).
 
 ### LLC Converter (standalone)
-![LLC Circuit](images/llc_circuit.png)
+![LLC Circuit](Images/LLC_circuit.png)
 
 ### Complete Micro-Inverter (LLC + H-Bridge + LC Filter)
-![Full Circuit](images/full_circuit.png)
+![Full Circuit](Images/Full_circuit.png)
 
 ### Output Waveform — 230V_RMS / 50Hz
-![Sinusoidal Output](images/sinewave_output.png)
+![Sinusoidal Output](Images/Sinewave_output.png)
 
 ---
 
