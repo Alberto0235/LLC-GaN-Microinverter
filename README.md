@@ -144,8 +144,7 @@ run('llc_gain_plot.m')
 llc-gan-microinverter/
 │
 ├── README.md
-├── report/
-│   └── LLC_Converter_Report.pdf          # Full internship report (EN)
+├── LLC_Converter_Report.pdf          # Full internship report (EN)
 │
 ├── ltspice/
 │   ├── llc_converter/                    # LLC stage standalone (3 frequencies)
