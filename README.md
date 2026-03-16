@@ -154,14 +154,14 @@ llc-gan-microinverter/
 │   ├── Efficiency_Sweep/             # Full system sweep
 │   ├── Full_Microinverter/           # Complete LLC + H-bridge + LC filter
 │   ├── Inverter/                     # Inverter stage
-│   ├── LLC_Converter/                # LLC stage
+│   └── LLC_Converter/                # LLC stage
 │
 ├── Matlab/
 │   └── LLC Gain Plot.m
 │
 │
 ├── Sizing/
-│   └── LLC Sizing.c
+│   ├── LLC Sizing.c
 │   └── LLC Sizing.m
 │
 └── Images/
