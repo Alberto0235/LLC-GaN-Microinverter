@@ -196,7 +196,7 @@ llc-gan-microinverter/
 | **MATLAB** | Resonant tank gain plotting and design verification |
 | **C (gcc)** | Automated component sizing tool |
 | **LaTeX** | Technical report preparation |
-| **EPC GaN Library** | Real GaN MOSFET SPICE models |
+| **GaN Library** | Real GaN MOSFET SPICE models |
 
 ---
 
