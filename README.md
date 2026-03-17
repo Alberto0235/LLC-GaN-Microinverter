@@ -118,24 +118,24 @@ The secondary-side bridge uses GaN MOSFETs as a **synchronous rectifier** instea
 
 ## 🔧 Tools & Code
 
-### Sizing Tool — `Sizing/LLC Sizing.c`
+### Sizing Tool — `Sizing/LLC_Sizing.c`
 
 A C program that automates the full LLC component sizing workflow. Given design specs (V_in, V_out, P_out, f_r, Q, m, F_x,min, K_max), it computes L_r, C_r, L_m, N_p/N_s, and f_s,min — eliminating manual calculation errors during design iteration.
 
 ```bash
-gcc "LLC Sizing.c" -o llc_sizing -lm
+gcc LLC_Sizing.c -o llc_sizing -lm
 ./llc_sizing
 ```
 
-A MATLAB version is also available at `Sizing/LLC Sizing.m`.
+A MATLAB version is also available at `Sizing/LLC_Sizing.m`.
 
-### Gain Plot — `Matlab/LLC Gain Plot.m`
+### Gain Plot — `Matlab/LLC_Gain_Plot.m`
 
 MATLAB script that plots the resonant tank voltage gain K(Q, m, F_x) for multiple Q values and three values of m. Used to graphically extract K_max and F_x,min as inputs to the sizing tool.
 
 ```matlab
 % Run in MATLAB — generates gain plots for m = [3, 6, 15]
-run('LLC Gain Plot.m')
+run('LLC_Gain_Plot.m')
 ```
 
 ---
@@ -157,11 +157,11 @@ llc-gan-microinverter/
 │   └── LLC_Converter/                # LLC stage
 │
 ├── Matlab/
-│   └── LLC Gain Plot.m
+│   └── LLC_Gain_Plot.m
 │
 ├── Sizing/
-│   ├── LLC Sizing.c
-│   └── LLC Sizing.m
+│   ├── LLC_Sizing.c
+│   └── LLC_Sizing.m
 │
 └── Images/
     ├── Eff_vs_Power.png
